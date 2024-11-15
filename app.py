@@ -30,7 +30,7 @@ def index():
                 <textarea name="comment" placeholder="Enter your details"></textarea><br>
                 <button type="submit">Submit</button>
             </form>
-            <h2>Submitted Details:</h2>
+            <h2>Submitted From:</h2>
             <div>{{ comment_section | safe }}</div>
         </body>
         </html>
