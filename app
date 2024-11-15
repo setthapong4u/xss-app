@@ -22,14 +22,14 @@ def index():
     # Display the form and the comments
     return render_template_string('''
         <html>
-        <head><title>Benefit Form</title></head>
+        <head><title>Vulnerable XSS Comment Section</title></head>
         <body>
-            <h1>Your ID</h1>
+            <h1>Comment Section</h1>
             <form method="post" action="/">
-                <textarea name="comment" placeholder="Enter your ID"></textarea><br>
-                <button type="submit">Enter</button>
+                <textarea name="comment" placeholder="Enter your comment here"></textarea><br>
+                <button type="submit">Post Comment</button>
             </form>
-            <h2>Benefit:</h2>
+            <h2>Comments:</h2>
             <div>{{ comment_section | safe }}</div>
         </body>
         </html>
